@@ -1,0 +1,147 @@
+/* Global
+----------------------------------------------------------------------------------------------------  */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto.eot'),
+        url('../fonts/Roboto.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto.woff2') format('woff2'),
+        url('../fonts/Roboto.woff') format('woff'),
+        url('../fonts/Roboto.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    background-color: #3882F6;
+    border: none;
+    border-radius: 10px;
+    padding: 13px 7%;
+}
+
+button:hover {
+    background-color: #0B64F0;
+    color: #C8CCD5;
+    cursor: pointer;
+}
+
+img {
+    margin: 10px 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.column {
+    flex: 50%;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100rem;
+    padding: 10px 10%;
+    position: relative;
+}
+
+.row {
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+
+
+/* Box Model & Layouts
+----------------------------------------------------------------------------------------------------  */
+body,
+.hero__main-txt {
+    margin: 0;
+}
+
+
+
+/* Colors
+----------------------------------------------------------------------------------------------------  */
+button,
+.header__link-txt,
+.hero__secondary-txt {
+    color: #E5E7EB;
+}
+
+header,
+.hero {
+    background-color: #1F2937;
+}
+
+.header__logo-txt,
+.hero__main-txt {
+    color: #F9FAF8;
+}
+
+
+
+/* Fonts & Texts
+----------------------------------------------------------------------------------------------------  */
+button,
+.header__logo-txt {
+    font-weight: 800;
+}
+
+.header__link-txt,
+.hero__secondary-txt {
+    font-size: 18px;
+}
+
+
+
+/* Header
+----------------------------------------------------------------------------------------------------  */
+.header__link-txt:hover,
+.header__logo-txt:hover {
+    color: #3882F6;
+}
+
+.header__logo-txt {
+    font-size: 24px;
+}
+
+
+
+/* Hero Section
+----------------------------------------------------------------------------------------------------  */
+.hero {
+    padding: 0.5em 0 3em 0;
+}
+
+.hero__main-txt {
+    font-size: 48px;
+}
+
+
+
+/* Media Query
+----------------------------------------------------------------------------------------------------  */
+@media only screen and (max-width: 1030px) {
+    .hero__img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    nav {
+        display: none;
+    }
+}
