@@ -23,9 +23,7 @@ body {
 }
 
 button {
-    background-color: #3882F6;
     border: none;
-    border-radius: 10px;
     padding: 13px 7%;
 }
 
@@ -71,21 +69,46 @@ body,
     margin: 0;
 }
 
+button,
+.cta__row {
+    border-radius: 10px;
+}
+
+.cta__column,
+.info__column {
+    display: block;
+    flex-grow: 1;
+}
+
+.cta__row,
+.info__row {
+    flex-wrap: wrap;
+}
+
 
 
 /* Colors
 ----------------------------------------------------------------------------------------------------  */
 button,
+.cta__row {
+    background-color: #3882F6;
+}
+
+button,
+.footer__txt,
 .header__link-txt,
 .hero__secondary-txt {
     color: #E5E7EB;
 }
 
+footer,
 header,
 .hero {
     background-color: #1F2937;
 }
 
+.cta__main-txt,
+.cta__txt,
 .header__logo-txt,
 .hero__main-txt {
     color: #F9FAF8;
@@ -103,14 +126,22 @@ header,
 /* Fonts & Texts
 ----------------------------------------------------------------------------------------------------  */
 button,
+.cta__main-txt,
 .header__logo-txt,
 .info__main-txt {
     font-weight: 800;
 }
 
+.footer__txt,
 .header__link-txt,
 .hero__secondary-txt {
     font-size: 18px;
+}
+
+.footer__txt,
+.info__column,
+.info__main-txt {
+    text-align: center;
 }
 
 .header__logo-txt,
@@ -149,14 +180,7 @@ button,
 /* Information Section
 ----------------------------------------------------------------------------------------------------  */
 .info__column {
-    display: block;
     flex-basis: 200px;
-    flex-grow: 1;
-}
-
-.info__column,
-.info__main-txt {
-    text-align: center;
 }
 
 .info__img {
@@ -173,7 +197,6 @@ button,
 
 .info__row {
     align-items: flex-start;
-    flex-wrap: wrap;
     padding: 40px 10% 80px 10%;
 }
 
@@ -194,6 +217,38 @@ button,
     font-style: italic;
     font-weight: 300;
     margin: 70px 10% 0 10%;
+}
+
+
+
+/* Call-to-Action Section
+----------------------------------------------------------------------------------------------------  */
+.cta__btn {
+    align-self: center;
+    border: 2px solid;
+    border-color: #F9FAF8;
+}
+
+.cta__btn:hover {
+    border-color: #E0E5DA;
+}
+
+.cta__column {
+    flex-basis: 295px;
+}
+
+.cta__container {
+    padding: 100px 10%;
+}
+
+.cta__main-txt,
+.cta__txt {
+    margin: 5px;
+}
+
+.cta__row {
+    gap: 10px;
+    padding: 40px 10%;
 }
 
 
